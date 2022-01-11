@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/danteocualesjr/Alchemy-My-First-NFT/issues"
   },
-  "homepage": "https://github.com/danteocualesjr/Alchemy-My-First-NFT#readme"
+  "homepage": "https://github.com/danteocualesjr/Alchemy-My-First-NFT#readme",
+  "devDependencies": {
+    "hardhat": "^2.8.2"
+  }
 }
