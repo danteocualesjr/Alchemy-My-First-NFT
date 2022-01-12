@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/danteocualesjr/Alchemy-My-First-NFT#readme",
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "ethers": "^5.5.3",
     "hardhat": "^2.8.2"
   },
   "dependencies": {
