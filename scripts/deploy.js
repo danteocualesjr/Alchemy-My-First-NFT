@@ -3,7 +3,7 @@ async function main() {
     const MyNFT = await ethers.getContractFactory("MyNFT");
 
     // Start deployment, returning a promise that resolves to a contract object
-    const MyNFT = await MyNFT.deploy(); // Instance of the contract
+    const myNFT = await MyNFT.deploy(); // Instance of the contract
     console.log("Contract deployed to address:", myNFT.address);
 }
 
@@ -13,3 +13,6 @@ main()
         console.error(error);
         process.exit(1);
     });
+
+// Deployed smart contract using the command 'npx hardhat run scripts/deploy.js --network ropsten'
+
