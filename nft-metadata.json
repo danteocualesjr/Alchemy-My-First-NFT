@@ -1,0 +1,12 @@
+{
+    "attributes" : [ {
+        "trait_type" : "Family",
+        "value" : "Cuales"
+    }, {
+        "trait_type" : "Location",
+        "value" : "Metaverse"
+    } ],
+        "description" : "An 18th century portrait of a 21st century family.",
+        "image" : "https://gateway.pinata.cloud/ipfs/QmXk4SXhTdNVnwN6jYsyH6ZEgg1nuJqwguhQASEBanUveu",
+        "name" : "Portrait of a Family"
+}
