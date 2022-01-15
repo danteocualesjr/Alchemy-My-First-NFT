@@ -24,6 +24,11 @@ async function mintNFT(tokenURI) {
         'maxPriorityFeePerGas': 1999999987,
         'data': nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI()
     };
+
+    const signedTx = await web3.eth.accounts.signTransaction(tx, PRIVATE_KEY);
+    const transactionReceipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
+
+    console.log(`Transaction receipt: ${JSON.stringify(transactionReceipt)}`);
 }
 
 // Printing the ABI in the console
@@ -32,4 +37,3 @@ async function mintNFT(tokenURI) {
 /* 
 Command for printing the ABI in the console: 'node scripts/mint-nft.js'
 */
-
