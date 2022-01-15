@@ -33,4 +33,3 @@ async function mintNFT(tokenURI) {
 Command for printing the ABI in the console: 'node scripts/mint-nft.js'
 */
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
