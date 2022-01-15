@@ -37,3 +37,5 @@ async function mintNFT(tokenURI) {
 /* 
 Command for printing the ABI in the console: 'node scripts/mint-nft.js'
 */
+
+mintNFT("https://gateway.pinata.cloud/ipfs/QmTSu48mziHviSe33LcH2gtyKiVimheX2UZW94mXSrr1hr");
