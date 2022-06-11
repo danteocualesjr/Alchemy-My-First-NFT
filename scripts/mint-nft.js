@@ -6,7 +6,6 @@ const { createAlchemyWeb3 } = require('@alch/alchemy-web3');
 const web3 = createAlchemyWeb3(API_URL);
 
 // Grabbing contract's ABI
-
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
 const contractAddress = "0xe8B00e6d6DE63a9c4d3d3b881d2199505eb03C5C";
 const nftContract= new web3.eth.Contract(contract.abi, contractAddress);
