@@ -18,13 +18,14 @@ async function mintNFT(tokenURI) {
     // The transaction
     
     const tx = {
-        
+
         'from': PUBLIC_KEY,
         'to': contractAddress,
         'nonce': nonce,
         'gas': 500000,
         'maxPriorityFeePerGas': 1999999987,
         'data': nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI()
+
     };
 
     const signedTx = await web3.eth.accounts.signTransaction(tx, PRIVATE_KEY);
