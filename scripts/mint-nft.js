@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const API_URL = process.env.API_URL;
+
 const PUBLIC_KEY = process.env.PUBLIC_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const { createAlchemyWeb3 } = require('@alch/alchemy-web3');
@@ -13,7 +14,7 @@ const contractAddress = "0xe8B00e6d6DE63a9c4d3d3b881d2199505eb03C5C";
 const nftContract= new web3.eth.Contract(contract.abi, contractAddress);
 
 async function mintNFT(tokenURI) {
-    
+
     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); // Get latest nonce
 
     // The transaction
