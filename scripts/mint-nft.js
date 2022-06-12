@@ -32,6 +32,7 @@ async function mintNFT(tokenURI) {
     const transactionReceipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
 
     console.log(`Transaction receipt: ${JSON.stringify(transactionReceipt)}`);
+
 }
 
 // Printing the ABI in the console
