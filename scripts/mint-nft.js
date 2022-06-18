@@ -20,7 +20,6 @@ async function mintNFT(tokenURI) {
     // The transaction    
 
     const tx = {
-
         'from': PUBLIC_KEY,
         'to': contractAddress,
         'nonce': nonce,
