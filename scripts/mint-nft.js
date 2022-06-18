@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const API_URL = process.env.API_URL;
+
 const PUBLIC_KEY = process.env.PUBLIC_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const { createAlchemyWeb3 } = require('@alch/alchemy-web3');
@@ -32,7 +33,7 @@ async function mintNFT(tokenURI) {
     const signedTx = await web3.eth.accounts.signTransaction(tx, PRIVATE_KEY);
     const transactionReceipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
     console.log(`Transaction receipt: ${JSON.stringify(transactionReceipt)}`);
-    
+
 }
 
 // Printing the ABI in the console
