@@ -27,7 +27,6 @@ async function mintNFT(tokenURI) {
         'gas': 500000,
         'maxPriorityFeePerGas': 1999999987,
         'data': nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI()
-
     };
     const signedTx = await web3.eth.accounts.signTransaction(tx, PRIVATE_KEY);
     const transactionReceipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
