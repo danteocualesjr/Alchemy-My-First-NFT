@@ -17,7 +17,7 @@ async function mintNFT(tokenURI) {
     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); // Get latest nonce
 
     // The transaction    
-    
+
     const tx = {
 
         'from': PUBLIC_KEY,
@@ -26,6 +26,7 @@ async function mintNFT(tokenURI) {
         'gas': 500000,
         'maxPriorityFeePerGas': 1999999987,
         'data': nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI()
+        
     };
 
     const signedTx = await web3.eth.accounts.signTransaction(tx, PRIVATE_KEY);
