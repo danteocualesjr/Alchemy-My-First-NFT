@@ -18,7 +18,6 @@ async function mintNFT(tokenURI) {
     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); // Get latest nonce
 
     // The transaction    
-
     const tx = {
         'from': PUBLIC_KEY,
         'to': contractAddress,
